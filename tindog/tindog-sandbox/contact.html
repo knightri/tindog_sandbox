@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+    <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css1/styles.css">
+    <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- bootstrap Script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+   <script src="validator.js"></script>
+</head>
+
+<body>
+
+  <section class="colored-section"id="title">
+
+    <div class="container-fluid">
+
+
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a  class="navbar-brand"href="index.html">tindog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        	<li class="nav-item ">
+               <a class="nav-link" href="mainlogin.html">Login</a>
+            </li>
+            <li class="nav-item ">
+               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link"href="#cta">Download</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container">
+  <form name="contactForm" onsubmit="return validateForm()" action="" method="post">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <!--div class="validation"--><!--/div-->
+                </div>
+                <div class="form-group">
+                  <input type="text"  name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <!--div class="validation"--><!--/div-->
+                </div>
+                <div class="form-group">
+                  <input type="text" name="mobile" id="mobile" placeholder="Your Mobile Number" data-rule="minlen:10" data-msg="Please enter at least 10 digits" />
+                  <!--div class="validation"--><!--/div-->
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <!--div class="validation"--><!--/div-->
+                </div>
+                <div class="form-group">
+                  <textarea name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <!--div class="validation"--><!--/div-->
+                </div>
+
+                
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" name="submit" title="Send Message">Send Message</button>
+                </div> 
+    
+</form>
+</div>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active container-fluid" >
+      <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+
+    <div class="carousel-item container-fluid" >
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+      <em>Beverly, Illinois</em>
+    </div>
+   </div>
+   <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   </a>
+   <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   </a>
+  </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+ 
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+    <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button  "><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+  </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-facebook-messenger"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <p>© Copyright 2020 TinDog</p>
+  </div>
+
+  </footer>
+
+
+</body>
+
+</html>
